@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-
-require "bundler/setup"
-require "pry"
-require "sunrise_cli_gem"
-require_relative "lib/sunrise_cli_gem"
-
-SunriseCliGem::CLI.new.start

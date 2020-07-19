@@ -1,10 +1,10 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sunrise_cli/version'
+require 'sunrise_cli_gem/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sunrise_cli_gem"
-  spec.version       = SunriseCli::VERSION
+  spec.version       = SunriseCliGem::VERSION
   spec.authors       = ["ndorazil"]
   spec.email         = ["nathandorazil@live.com"]
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.executables   = ["sunrise_cli"]
+  spec.executables   = ["sunrise_cli_gem"]
   spec.require_paths = ["lib"]
   
   spec.add_dependency "http"
@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 12.3.3"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "json"
+  spec.add_development_dependency "httparty"
 end

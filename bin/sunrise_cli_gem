@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "pry"
+require_relative "../lib/sunrise_cli_gem" 
+
+SunriseCliGem::CLI.new.start
+# SunriseCliGem::Times.load_by_location("47", "-104", "2000-05-07")
