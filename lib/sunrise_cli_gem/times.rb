@@ -30,7 +30,6 @@ module SunriseCliGem
             @sunset = attributes["sunset"]
         end
 
-        # binding.pry
 
     end
 end
