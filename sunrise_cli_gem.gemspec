@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nathandorazil@live.com"]
 
   spec.summary       = %q{Get your Sunrise and Sunset times right here!}
-  spec.description   = %q{Put in your latitude and longitude to find sunrise and sunset times!}
+  spec.description   = %q{Put in your coordinates for any location to find sunrise and sunset times!}
   spec.homepage      = "https://github.com/ndorazil/sunrise_cli_gem"
   spec.license       = "MIT"
   spec.metadata["homepage_uri"] = spec.homepage

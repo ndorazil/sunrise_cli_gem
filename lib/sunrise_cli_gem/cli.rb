@@ -1,3 +1,5 @@
+#lib/sunrise_cli_gem/cli.rb
+
 module SunriseCliGem
     class CLI
 
@@ -13,10 +15,10 @@ module SunriseCliGem
 
             @answer = gets.chomp
 
-            if @answer == "yes"
+            if @answer == "yes" || @answer == "Yes"
                 reset
                 SunriseCliGem::CLI.new.start
-            elsif @answer == "no"
+            elsif @answer == "no" || @answer == "No"
                 puts " "
                 puts "Thank you! Have a wonderful day!"
             end
@@ -26,7 +28,7 @@ module SunriseCliGem
             puts "Please visit the following website to find the latitude and longitude for your desired location." 
             puts " "
             puts "----------"
-            puts "https://www.latlong.net/ "
+            puts "https://www.latlong.net/"
             puts "----------"
             puts " "
             puts "First, please input the latitude of your location."
@@ -40,7 +42,7 @@ module SunriseCliGem
             
             puts " "
             puts "And lastly, the date (YYYY-MM-DD) you would like to search for sunrise and sunset times on."
-            
+
             @date = gets.chomp
 
             Times.load_by_location(@latitude, @longitude, @date)
